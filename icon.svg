@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
+   height="350"
+   id="svg2513"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   version="1.0"
+   sodipodi:docname="risto_pekkala_Alarm_clock.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="C:\work\nv\nv\icon48.png"
+   inkscape:export-xdpi="12.342857"
+   inkscape:export-ydpi="12.342857">
+  <defs
+     id="defs2515">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective2521"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="113.20779"
+     inkscape:cy="192.06086"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="966"
+     inkscape:window-x="1672"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-188.85479,-293.57041)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3183"
+       sodipodi:cx="214.28572"
+       sodipodi:cy="412.36218"
+       sodipodi:rx="72.85714"
+       sodipodi:ry="72.85714"
+       d="m 287.14286,412.36218 a 72.85714,72.85714 0 1 1 -145.71428,0 72.85714,72.85714 0 1 1 145.71428,0 z"
+       transform="matrix(1.8804614,0,0,1.8804614,-39.650954,-281.72295)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3185"
+       sodipodi:cx="20.714285"
+       sodipodi:cy="306.29074"
+       sodipodi:rx="4.2857141"
+       sodipodi:ry="35.357143"
+       d="m 24.999999,306.29074 a 4.2857141,35.357143 0 1 1 -8.571428,0 4.2857141,35.357143 0 1 1 8.571428,0 z"
+       transform="matrix(1.5614093,1.0479198,-0.58747024,0.8753356,486.72091,239.82437)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3187"
+       sodipodi:cx="20.714285"
+       sodipodi:cy="306.29074"
+       sodipodi:rx="4.2857141"
+       sodipodi:ry="35.357143"
+       d="m 24.999999,306.29074 a 4.2857141,35.357143 0 1 1 -8.571428,0 4.2857141,35.357143 0 1 1 8.571428,0 z"
+       transform="matrix(1.3860509,-0.9491093,1.022949,1.2860013,-18.349847,71.794895)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3189"
+       sodipodi:cx="216.42857"
+       sodipodi:cy="355.93362"
+       sodipodi:rx="7.8571429"
+       sodipodi:ry="7.8571429"
+       d="m 224.28572,355.93362 a 7.8571429,7.8571429 0 1 1 -15.71429,0 7.8571429,7.8571429 0 1 1 15.71429,0 z"
+       transform="matrix(1.8804614,0,0,1.8804614,-43.680506,-175.61123)" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 518.73992,432.79444 c 26.65345,-30.49006 23.53967,-76.86741 -6.95039,-103.52086 -30.49007,-26.65344 -76.8674,-23.53966 -103.52083,6.95041"
+       id="path3194"
+       sodipodi:nodetypes="csc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3196"
+       sodipodi:cx="216.42857"
+       sodipodi:cy="355.93362"
+       sodipodi:rx="7.8571429"
+       sodipodi:ry="7.8571429"
+       d="m 224.28572,355.93362 a 7.8571429,7.8571429 0 1 1 -15.71429,0 7.8571429,7.8571429 0 1 1 15.71429,0 z"
+       transform="matrix(1.8804614,0,0,1.8804614,-59.798759,-339.48001)" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 206.97439,432.79444 c -26.65346,-30.49006 -23.53968,-76.86741 6.95039,-103.52086 30.49006,-26.65344 76.86739,-23.53966 103.52083,6.95041"
+       id="path3198"
+       sodipodi:nodetypes="csc" />
+  </g>
+  <metadata
+     id="metadata2998">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2008-03-05T20:48:27</dc:date>
+        <dc:description />
+        <dc:source>http://openclipart.org/detail/15483/alarm-clock-by-risto_pekkala</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>risto_pekkala</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+            <rdf:li>svg</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

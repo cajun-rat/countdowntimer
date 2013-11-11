@@ -1,0 +1,6 @@
+*.msi
+*~
+*.swp
+*.wixobj
+*.wixpdb
+*.pro.user

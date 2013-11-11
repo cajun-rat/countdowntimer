@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<?if $(var.Platform) = x64 ?>
+  <?define ProductId = "00893378-4748-409C-963C-49C3706EBA7B" ?>
+  <?define ProductUpgradeCode = "327720B0-DB02-4CB5-8469-49F7169E7B40" ?>
+  <?define Win64 = "yes" ?>
+  <?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
+  <?define QtDir = "C:\Qt\5.1.1\msvc2012_64" ?>
+  <?define BuildDir = "..\build-countdowntimer-Desktop_Qt_5_1_1_MSVC2012_64bit-Release\release" ?>
+  <?define CRTMergeModule = "C:\Program Files (x86)\Common Files\Merge Modules\Microsoft_VC110_CRT_x64.msm" ?>
+<?else ?>
+  <?define ProductId = "DFCEE7A0-F794-48F6-853E-B9B60819AA1B" ?>
+  <?define ProductUpgradeCode = "17247ED1-305D-4057-9D78-174F6EEAA352" ?>
+  <?define Win64 = "no" ?>
+  <?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
+  <?define QtDir = "C:\Qt\5.1.1\msvc2012" ?>
+  <?define BuildDir = "..\build-countdowntimer-Desktop_Qt_5_1_1_MSVC2012_32bit-Release\release" ?>
+  <?define CRTMergeModule = "C:\Program Files (x86)\Common Files\Merge Modules\Microsoft_VC110_CRT_x86.msm" ?>
+<?endif ?>
+   <Product Id="*" UpgradeCode="$(var.ProductUpgradeCode)" 
+            Name="Countdown Timer" Version="$(var.Version)" Manufacturer="Phil Wise" Language="1033">
+      <Package InstallerVersion="405" Compressed="yes" Comments="Windows Installer Package"/>
+      <Media Id="1" Cabinet="product.cab" EmbedCab="yes"/>
+      <MajorUpgrade DowngradeErrorMessage="A later version of Countdown Timer is already installed. Setup will now exit."/> 
+      <Directory Id="TARGETDIR" Name="SourceDir">
+        <Merge Id="CRT" Language="0" SourceFile="$(var.CRTMergeModule)" DiskId="1" />
+
+         <Directory Id="$(var.PlatformProgramFilesFolder)">
+            <Directory Id="INSTALLDIR" Name="Count Down">
+               <Component Id="ApplicationFiles" Guid="B1BA1118-D537-413a-B622-01C601AAB5F3" Win64="$(var.Win64)">
+                  <File Id="nvexe" Source="$(var.BuildDir)\countdowntimer.exe"/>
+                  <File Id="qt5coredll"       Source="$(var.QtDir)\bin\Qt5Core.dll"/>
+                  <File Id="qt5guidll"        Source="$(var.QtDir)\bin\Qt5Gui.dll"/>
+                  <File Id="qt5multimediadll" Source="$(var.QtDir)\bin\Qt5Multimedia.dll"/>
+                  <File Id="qt5widgetsdll"    Source="$(var.QtDir)\bin\Qt5Widgets.dll"/>
+                  <File Id="icuin51dll"       Source="$(var.QtDir)\bin\icuin51.dll"/>
+                  <File Id="icuuc51dll"       Source="$(var.QtDir)\bin\icuuc51.dll"/>
+                  <File Id="icudt51dll"       Source="$(var.QtDir)\bin\icudt51.dll"/>
+                  <File Id="qt5networkdll"    Source="$(var.QtDir)\bin\Qt5Network.dll"/>
+                  <File Id="libglesv2dll"     Source="$(var.QtDir)\bin\libGLESv2.dll"/>
+                  <File Id="libegldll"        Source="$(var.QtDir)\bin\libEGL.dll"/>
+               </Component>
+	       <Directory Id="qtplatform" Name="platforms">
+                 <Component Id="qtplatformfiles">
+                   <File Id="qwindowsdll" Source="$(var.QtDir)\plugins\platforms\qwindows.dll"/>
+                 </Component>
+               </Directory>
+            </Directory>
+         </Directory>
+ 
+         <Directory Id="ProgramMenuFolder">
+            <Directory Id="ProgramMenuSubfolder" Name="Example">
+               <Component Id="ApplicationShortcuts" Guid="64D0D3EE-42A6-4188-8A7B-AC45CEBBD93F">
+                  <Shortcut Id="ApplicationShortcut1" Name="Countdown Timer" Description="A countdown timer" 
+                            Target="[INSTALLDIR]nv.exe" WorkingDirectory="INSTALLDIR"/>
+                  <RegistryValue Root="HKCU" Key="Software\Phil Wise\Countdown Timer" 
+                            Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+                  <RemoveFolder Id="ProgramMenuSubfolder" On="uninstall"/>
+               </Component>
+            </Directory>
+         </Directory>
+      </Directory>
+ 
+      <Feature Id="DefaultFeature" Level="1">
+         <ComponentRef Id="ApplicationFiles"/>
+         <ComponentRef Id="ApplicationShortcuts"/>
+         <ComponentRef Id="qtplatformfiles"/>
+      </Feature>
+      <Feature Id='CRT_WinSXS' Title='CRT WinSXS' Level='1'>
+        <MergeRef Id='CRT' />
+      </Feature>
+
+   </Product>
+</Wix>
