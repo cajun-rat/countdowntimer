@@ -8,26 +8,13 @@
 #include <QtDebug>
 
 
-MainWindow::MainWindow(QWidget *parent) :
+MainWindow::MainWindow(vector<TimeOption> timeOptions_, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
     timer(this),
-    finishedSource(":/sounds/alarm.raw")
+    finishedSource(":/sounds/alarm.raw"),
+    timeOptions(timeOptions_)
 {
-    timeOptions.push_back(TimeOption("2 sec", 2));
-    timeOptions.push_back(TimeOption("10 sec", 10));
-    timeOptions.push_back(TimeOption("1 min", 60));
-    timeOptions.push_back(TimeOption("2 min", 60*2));
-    timeOptions.push_back(TimeOption("3 min", 60*3));
-    timeOptions.push_back(TimeOption("4 min", 60*4));
-    timeOptions.push_back(TimeOption("5 min", 60*5));
-    timeOptions.push_back(TimeOption("10 min", 60*10));
-    timeOptions.push_back(TimeOption("15 min", 60*15));
-    timeOptions.push_back(TimeOption("20 min", 60*20));
-    timeOptions.push_back(TimeOption("30 min", 60*30));
-    timeOptions.push_back(TimeOption("45 min", 60*45));
-    timeOptions.push_back(TimeOption("1 hour", 60*60));
-
 
     ui->setupUi(this);
 
@@ -107,7 +94,7 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 TimeDisplay::TimeDisplay(QWidget *parent) :
     QWidget(parent), m_SecondsToGo(0) {}
 
-void TimeDisplay::paintEvent(QPaintEvent *event) {
+void TimeDisplay::paintEvent(QPaintEvent*) {
     stringstream text;
     if (m_SecondsToGo > 0) {
         text << " ";
