@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 <?if $(var.Platform) = x64 ?>
-  <?define ProductId = "00893378-4748-409C-963C-49C3706EBA7B" ?>
   <?define ProductUpgradeCode = "327720B0-DB02-4CB5-8469-49F7169E7B40" ?>
   <?define Win64 = "yes" ?>
   <?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
@@ -9,7 +8,6 @@
   <?define BuildDir = "..\build-countdowntimer-Desktop_Qt_5_1_1_MSVC2012_64bit-Release\release" ?>
   <?define CRTMergeModule = "C:\Program Files (x86)\Common Files\Merge Modules\Microsoft_VC110_CRT_x64.msm" ?>
 <?else ?>
-  <?define ProductId = "DFCEE7A0-F794-48F6-853E-B9B60819AA1B" ?>
   <?define ProductUpgradeCode = "17247ED1-305D-4057-9D78-174F6EEAA352" ?>
   <?define Win64 = "no" ?>
   <?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
